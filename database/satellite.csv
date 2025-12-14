@@ -1,0 +1,356 @@
+ID;PT;SATELLITE_NAME;FREQ;POL;AZ_REAL;UM_REAL;COMMENT
+1;2;BulgariaSat-1;12169;V;0;0;AC-7.2m
+2;3;Eutelsat 3B ;3729;L;0;0;AC-7.2m
+3;3;Rascom 1R ;3986;R;0;0;AC-7.2m
+4;5;Astra 4A ;11747;V;0;0;AC-7.2m
+5;5;SES 5 ;3663;L;0;0;AC-7.2m
+6;7;Eutelsat 7B ;10721;H;0;0;AC-7.2m
+7;7;Eutelsat 7C;10804;V;0;0;AC-7.2m
+8;7;Eutelsat Konnect ;0;0;0;0;AC-7.2m
+9;9;Eutelsat KA-SAT 9A ;20193;L;0;0;AC-7.2m
+10;9;Eutelsat 9B ;11727;V;0;0;AC-7.2m
+11;10;Echostar 21 ;0;0;0;0;AC-7.2m
+12;10;Eutelsat 10A ;3650;R;0;0;AC-7.2m
+13;11;Inmarsat GX5 ;0;0;0;0;AC-7.2m
+14;13;Eutelsat Hot Bird 13B ;10815;H;0;0;AC-7.2m
+15;13;Eutelsat Hot Bird 13E ;10727;H;0;0;AC-7.2m
+16;13;Eutelsat Hot Bird 13C ;10758;V;0;0;AC-7.2m
+17;16;Eutelsat 16A ;10762;H;0;0;AC-7.2m
+18;17;Amos 17;11718;V;0;0;AC-7.2m
+19;19;Astra 1N;11082;H;0;0;AC-7.2m
+20;19;Astra 1L;10964;H;0;0;AC-7.2m
+21;19;Astra 1KR;10729;V;0;0;AC-7.2m
+22;19;Astra 1G;0;0;0;0;AC-7.2m
+23;19;Astra 1M;10744;H;0;0;AC-7.2m
+24;20;Arabsat 5C;3818;R;0;0;AC-7.2m
+25;21;GovSat-1 ;0;0;0;0;AC-7.2m
+26;21;Eutelsat 21B ;10856;V;0;0;AC-7.2m
+27;23;Astra 2D;0;0;0;0;AC-7.2m
+28;23;Astra 3B;11665;V;0;0;AC-7.2m
+29;24;Skynet 5B;0;0;0;0;AC-7.2m
+30;25;Es hail 1 ;11045;H;0;0;AC-7.2m
+31;25;Alphasat I-XL ;0;0;0;0;AC-7.2m
+32;25;Es hail 2;10770;H;0;0;AC-7.2m
+33;26;Badr 7 ;11230;H;0;0;AC-7.2m
+34;26;Badr 4 ;0;0;0;0;AC-7.2m
+35;26;Badr 6 ;4102;L;0;0;AC-7.2m
+36;26;Badr 5 ;11919;H;0;0;AC-7.2m
+37;28;Astra 2A;0;0;0;0;AC-7.2m
+38;28;Astra 2F;12148;H;0;0;AC-7.2m
+39;28;Astra 2E;11914;H;0;0;AC-7.2m
+40;28;Astra 2G;11038;V;0;0;AC-7.2m
+41;29;XTAR-EUR ;0;0;0;0;AC-7.2m
+42;31;Arabsat 6A;0;0;0;0;AC-7.2m
+43;31;Hylas 3 ;0;0;0;0;AC-7.2m
+44;31;Turksat 5A;10992;V;0;0;AC-7.2m
+45;31;Arabsat 5A;10795;H;0;0;AC-7.2m
+46;31;Hylas 2;19720;R;0;0;AC-7.2m
+47;31;Astra 5B ;11817;V;0;0;AC-7.2m
+48;33;Galaxy 14 ;0;0;0;0;AC-7.2m
+49;33;Eutelsat 33E ;10999;H;0;0;AC-7.2m
+50;33;Intelsat 28 ;0;0;0;0;AC-7.2m
+51;36;Eutelsat 36B ;11727;L;0;0;AC-7.2m
+52;36;Express AMU1 ;11747;R;0;0;AC-7.2m
+53;38;Paksat-1R;3717;V;0;0;AC-7.2m
+54;38;Athena Fidus;18996;L;0;0;AC-7.2m
+55;39;HellasSat 3 ;11514;H;0;0;AC-7.2m
+56;39;HellasSat 4 ;10730;H;0;0;AC-7.2m
+57;40;Express AM7 ;3685;L;0;0;AC-7.2m
+58;42;Nigcomsat 1R;0;0;0;0;AC-7.2m
+59;42;Turksat 4A;11789;H;0;0;AC-7.2m
+60;42;Turksat 3A ;10952;V;0;0;AC-7.2m
+61;44;Thuraya 2;0;0;0;0;AC-7.2m
+62;45;Azerspace 2 ;11475;V;0;0;AC-7.2m
+63;46;Azerspace ;3754;V;0;0;AC-7.2m
+64;48;GSAT 12;0;0;0;0;AC-7.2m
+65;48;Al Yah 2 ;0;0;0;0;AC-7.2m
+66;48;Eutelsat Quantum;0;0;0;0;AC-7.2m
+67;48;GSAT 19 ;0;0;0;0;AC-7.2m
+68;48;GSAT 31;0;0;0;0;AC-7.2m
+69;49;Yamal 601 ;3594;R;0;0;AC-7.2m
+70;50;Turksat 4B;11688;H;0;0;AC-7.2m
+71;51;BELINTERSAT-1;11230;H;0;0;AC-7.2m
+72;52;TurkmenAlem ;11221;V;0;0;AC-7.2m
+73;53;Al Yah 1 ;11977;H;0;0;AC-7.2m
+74;53;Skynet 5D;0;0;0;0;AC-7.2m
+75;53;Express AM6 ;10974;H;0;0;AC-7.2m
+76;55;GSAT 8 ;0;0;0;0;AC-7.2m
+77;55;Yamal 402 ;10885;V;0;0;AC-7.2m
+78;55;GSAT 16;0;0;0;0;AC-7.2m
+79;55;GSAT 29;0;0;0;0;AC-7.2m
+80;56;Express AT1;12284;R;0;0;AC-7.2m
+81;56;Inmarsat GX4 ;0;0;0;0;AC-7.2m
+82;57;NSS 12;4060;L;0;0;AC-7.2m
+83;58;Kazsat 3;10804;H;0;0;AC-7.2m
+84;60;Luch ;0;0;0;0;AC-7.2m
+85;60;Intelsat 33e;11503;V;0;0;AC-7.2m
+86;61;ABS-4 ;12214;V;0;0;AC-7.2m
+87;62;Intelsat 39 ;3713;R;0;0;AC-7.2m
+88;63;Inmarsat GX1 ;0;0;0;0;AC-7.2m
+89;64;Intelsat 906 ;3639;R;0;0;AC-7.2m
+90;64;Inmarsat-4F2 ;0;0;0;0;AC-7.2m
+91;65;Amos 4;11310;H;0;0;AC-7.2m
+92;66;Galaxy 25 ;0;0;0;0;AC-7.2m
+93;66;Intelsat 17 ;12601;H;0;0;AC-7.2m
+94;69;Intelsat 20 ;11010;V;0;0;AC-7.2m
+95;69;Intelsat 36;0;0;0;0;AC-7.2m
+96;70;Eutelsat 70B ;12516;V;0;0;AC-7.2m
+97;72;Intelsat 22 ;3774;L;0;0;AC-7.2m
+98;74;GSAT 7 ;0;0;0;0;AC-7.2m
+99;74;GSAT 11;0;0;0;0;AC-7.2m
+100;74;GSAT 14;0;0;0;0;AC-7.2m
+101;74;GSAT 18;0;0;0;0;AC-7.2m
+102;75;ABS-2A ;10985;H;0;0;AC-7.2m
+103;75;ABS-2 ;3606;V;0;0;AC-7.2m
+104;76;APSTAR 7;12505;V;0;0;AC-7.2m
+105;79;Thaicom 6 ;0;0;0;0;AC-7.2m
+106;79;Thaicom 8;0;0;0;0;AC-7.2m
+107;80;Express 80;10981;V;0;0;AC-7.2m
+108;83;GSAT 10;0;0;0;0;AC-7.2m
+109;83;GSAT 6 ;0;0;0;0;AC-7.2m
+110;83;GSAT 30;0;0;0;0;AC-7.2m
+111;83;CMS 01 ;0;0;0;0;AC-7.2m
+112;85;Horizons 2;0;0;0;0;AC-7.2m
+113;85;Intelsat 15 ;11623;V;0;0;AC-7.2m
+114;86;Kazsat 2;11499;V;0;0;AC-7.2m
+115;88;ST 2;10982;V;0;0;AC-7.2m
+116;88;Chinasat 12 ;3757;V;0;0;AC-7.2m
+117;90;Yamal 401 ;3639;R;0;0;AC-7.2m
+118;91;Measat 3A ;0;0;0;0;AC-7.2m
+119;91;Measat 3B ;0;0;0;0;AC-7.2m
+120;92;ChinaSat 9 ;0;0;0;0;AC-7.2m
+121;93;GSAT 15;0;0;0;0;AC-7.2m
+122;93;GSAT 17;0;0;0;0;AC-7.2m
+123;95;SES 8;0;0;0;0;AC-7.2m
+124;95;Luch 5V ;0;0;0;0;AC-7.2m
+125;95;Skynet 5A;0;0;0;0;AC-7.2m
+126;95;SES 12;0;0;0;0;AC-7.2m
+127;96;Express 103;3875;R;0;0;AC-7.2m
+128;97;GSAT 9 ;0;0;0;0;AC-7.2m
+129;98;Chinasat 11;3975;V;0;0;AC-7.2m
+130;98;Thuraya 3;0;0;0;0;AC-7.2m
+131;101;AsiaSat 5;3726;V;0;0;AC-7.2m
+132;101;ChinaSat 9B ;0;0;0;0;AC-7.2m
+133;105;Asiastar 1 ;0;0;0;0;AC-7.2m
+134;105;Asiasat 7 ;0;0;0;0;AC-7.2m
+135;108;SES 9;0;0;0;0;AC-7.2m
+136;108;Telkom 4 ;0;0;0;0;AC-7.2m
+137;108;SES 7 ;0;0;0;0;AC-7.2m
+138;110;BSat 3B;0;0;0;0;AC-7.2m
+139;110;ChinaSat 10 ;0;0;0;0;AC-7.2m
+140;110;BSat 3C ;0;0;0;0;AC-7.2m
+141;110;Chinasat 16 ;0;0;0;0;AC-7.2m
+142;110;BSat 3A;0;0;0;0;AC-7.2m
+143;110;JCSat 110A ;0;0;0;0;AC-7.2m
+144;110;Bsat 4A;0;0;0;0;AC-7.2m
+145;110;Bsat 4B;0;0;0;0;AC-7.2m
+146;113;Koreasat 5A ;0;0;0;0;AC-7.2m
+147;113;Koreasat 5 ;0;0;0;0;AC-7.2m
+148;116;ChinaSat 6B ;0;0;0;0;AC-7.2m
+149;116;Koreasat 6 ;0;0;0;0;AC-7.2m
+150;116;Koreasat 7 ;0;0;0;0;AC-7.2m
+151;118;Telkom 3S;0;0;0;0;AC-7.2m
+152;119;Bangabandhu-1 ;0;0;0;0;AC-7.2m
+153;119;Thaicom 4 ;0;0;0;0;AC-7.2m
+154;120;Asiasat 6 ;0;0;0;0;AC-7.2m
+155;122;Asiasat 9;0;0;0;0;AC-7.2m
+156;124;JCSat 4B ;0;0;0;0;AC-7.2m
+157;125;ChinaSat 6A ;0;0;0;0;AC-7.2m
+158;125;Chinasat 6C ;0;0;0;0;AC-7.2m
+159;128;LAOSat 1 ;0;0;0;0;AC-7.2m
+160;128;JCSat 3A ;0;0;0;0;AC-7.2m
+161;128;JCSat RA ;0;0;0;0;AC-7.2m
+162;128;COMS 1 ;0;0;0;0;AC-7.2m
+163;132;JCSat 5A ;0;0;0;0;AC-7.2m
+164;132;Vinasat 1;0;0;0;0;AC-7.2m
+165;132;Vinasat 2;0;0;0;0;AC-7.2m
+166;134;APSTAR 6C;0;0;0;0;AC-7.2m
+167;134;APSTAR 6D ;0;0;0;0;AC-7.2m
+168;136;JCSat 16;0;0;0;0;AC-7.2m
+169;136;JCSat 17;0;0;0;0;AC-7.2m
+170;138;Telstar 18V ;0;0;0;0;AC-7.2m
+171;140;Express AT2;0;0;0;0;AC-7.2m
+172;140;NBN-Co 1A ;0;0;0;0;AC-7.2m
+173;140;Express AM5 ;0;0;0;0;AC-7.2m
+174;142;APSTAR 9 ;0;0;0;0;AC-7.2m
+175;143;Inmarsat-4F1 ;0;0;0;0;AC-7.2m
+176;144;Superbird C2 ;0;0;0;0;AC-7.2m
+177;145;NBN-Co 1B ;0;0;0;0;AC-7.2m
+178;146;PSN 6 ;0;0;0;0;AC-7.2m
+179;150;BRIsat;0;0;0;0;AC-7.2m
+180;150;JCSat 1C ;0;0;0;0;AC-7.2m
+181;152;Optus D2;0;0;0;0;AC-7.2m
+182;154;JCSat 2B ;0;0;0;0;AC-7.2m
+183;156;Optus 10;0;0;0;0;AC-7.2m
+184;156;Optus C1 ;0;0;0;0;AC-7.2m
+185;156;Optus D3;0;0;0;0;AC-7.2m
+186;157;Intelsat 1R ;0;0;0;0;AC-7.2m
+187;159;ABS-6 ;0;0;0;0;AC-7.2m
+188;160;Optus D1;0;0;0;0;AC-7.2m
+189;162;Superbird B3 ;0;0;0;0;AC-7.2m
+190;163;Yamal 202 ;0;0;0;0;AC-7.2m
+191;166;Intelsat 19 ;0;0;0;0;AC-7.2m
+192;167;Luch 5A ;0;0;0;0;AC-7.2m
+193;169;Horizons 3E;0;0;0;0;AC-7.2m
+194;172;Eutelsat 172B;0;0;0;0;AC-7.2m
+195;174;Eutelsat 174A ;0;0;0;0;AC-7.2m
+196;176;NSS 11 ;0;0;0;0;AC-7.2m
+197;178;Intelsat 10 ;0;0;0;0;AC-7.2m
+198;180;Intelsat 18 ;0;0;0;0;AC-7.2m
+199;180;Inmarsat GX3 ;0;0;0;0;AC-7.2m
+200;-177;NSS 9;0;0;0;0;AC-7.2m
+201;-177;Yamal 300K ;0;0;0;0;AC-7.2m
+202;-169;NSS 6;0;0;0;0;AC-7.2m
+203;-143;Hispasat 143W-1 ;0;0;0;0;AC-7.2m
+204;-139;Eutelsat 139 West A ;0;0;0;0;AC-7.2m
+205;-139;Spaceway 2 ;0;0;0;0;AC-7.2m
+206;-135;AMC 4 ;0;0;0;0;AC-7.2m
+207;-135;AMC 8 ;0;0;0;0;AC-7.2m
+208;-133;Galaxy 15 ;0;0;0;0;AC-7.2m
+209;-133;Eutelsat 133 West A ;0;0;0;0;AC-7.2m
+210;-131;AMC 1 ;0;0;0;0;AC-7.2m
+211;-131;AMC 11 ;0;0;0;0;AC-7.2m
+212;-129;Galaxy 12 ;0;0;0;0;AC-7.2m
+213;-129;Ciel 2 ;0;0;0;0;AC-7.2m
+214;-129;SES 15;0;0;0;0;AC-7.2m
+215;-127;Horizons 1 ;0;0;0;0;AC-7.2m
+216;-125;AMC 21;0;0;0;0;AC-7.2m
+217;-125;Galaxy 30 ;0;0;0;0;AC-7.2m
+218;-123;Galaxy 18 ;0;0;0;0;AC-7.2m
+219;-121;Galaxy 23 ;0;0;0;0;AC-7.2m
+220;-119;Echostar 7;0;0;0;0;AC-7.2m
+221;-119;Anik F3;0;0;0;0;AC-7.2m
+222;-119;Directv 8;0;0;0;0;AC-7.2m
+223;-119;Echostar 14 ;0;0;0;0;AC-7.2m
+224;-117;Eutelsat 117 West A ;0;0;0;0;AC-7.2m
+225;-117;Eutelsat 117 West B ;0;0;0;0;AC-7.2m
+226;-116;Sirius FM-6 ;0;0;0;0;AC-7.2m
+227;-115;MexSat Bicentenario ;0;0;0;0;AC-7.2m
+228;-115;Eutelsat 115 West B ;0;0;0;0;AC-7.2m
+229;-115;Sirius XM7 ;0;0;0;0;AC-7.2m
+230;-115;XM 4 ;0;0;0;0;AC-7.2m
+231;-115;XM 5 ;0;0;0;0;AC-7.2m
+232;-115;ViaSat 1 ;0;0;0;0;AC-7.2m
+233;-113;Eutelsat 113 West A ;0;0;0;0;AC-7.2m
+234;-113;MexSat 2 ;0;0;0;0;AC-7.2m
+235;-111;Wildblue 1 ;0;0;0;0;AC-7.2m
+236;-111;Anik F2 ;0;0;0;0;AC-7.2m
+237;-111;Echostar T1 ;0;0;0;0;AC-7.2m
+238;-110;Echostar 10 ;0;0;0;0;AC-7.2m
+239;-110;Directv 5 ;0;0;0;0;AC-7.2m
+240;-110;Echostar 11 ;0;0;0;0;AC-7.2m
+241;-109;Anik F1;0;0;0;0;AC-7.2m
+242;-107;Anik F1R;0;0;0;0;AC-7.2m
+243;-107;Echostar 17 ;0;0;0;0;AC-7.2m
+244;-107;Anik G1;0;0;0;0;AC-7.2m
+245;-107;AMSC 1 ;0;0;0;0;AC-7.2m
+246;-105;SES 11 ;0;0;0;0;AC-7.2m
+247;-105;AMC 15;0;0;0;0;AC-7.2m
+248;-103;Directv 10;0;0;0;0;AC-7.2m
+249;-103;Directv 12 ;0;0;0;0;AC-7.2m
+250;-103;SES 3 ;0;0;0;0;AC-7.2m
+251;-103;Directv 15;0;0;0;0;AC-7.2m
+252;-101;Directv 16 ;0;0;0;0;AC-7.2m
+253;-101;Directv 9S ;0;0;0;0;AC-7.2m
+254;-101;SES 1 ;0;0;0;0;AC-7.2m
+255;-101;Skyterra 1;0;0;0;0;AC-7.2m
+256;-99;Galaxy 16 ;0;0;0;0;AC-7.2m
+257;-99;Directv 11;0;0;0;0;AC-7.2m
+258;-99;Directv 14 ;0;0;0;0;AC-7.2m
+259;-98;Inmarsat-4F3 ;0;0;0;0;AC-7.2m
+260;-97;Galaxy 19 ;0;0;0;0;AC-7.2m
+261;-97;Echostar 19 ;0;0;0;0;AC-7.2m
+262;-95;Intelsat 30 ;0;0;0;0;AC-7.2m
+263;-95;Intelsat 31 ;0;0;0;0;AC-7.2m
+264;-95;Galaxy 3C ;0;0;0;0;AC-7.2m
+265;-95;Spaceway 3 ;0;0;0;0;AC-7.2m
+266;-93;Galaxy 11 ;0;0;0;0;AC-7.2m
+267;-93;Echostar G1 ;0;0;0;0;AC-7.2m
+268;-92;Star One C1;0;0;0;0;AC-7.2m
+269;-91;Galaxy 17 ;0;0;0;0;AC-7.2m
+270;-91;Nimiq 6;0;0;0;0;AC-7.2m
+271;-89;Galaxy 28 ;0;0;0;0;AC-7.2m
+272;-87;Astra 3A;0;0;0;0;AC-7.2m
+273;-87;SES 2 ;0;0;0;0;AC-7.2m
+274;-87;Tupac Katari 1 ;0;0;0;0;AC-7.2m
+275;-86;Sirius FM-5 ;0;0;0;0;AC-7.2m
+276;-85;XM 3 ;0;0;0;0;AC-7.2m
+277;-85;Sirius XM8 ;0;0;0;0;AC-7.2m
+278;-84;Star One D1 ;0;0;0;0;AC-7.2m
+279;-83;AMC 18 ;0;0;0;0;AC-7.2m
+280;-82;Nimiq 4;0;0;0;0;AC-7.2m
+281;-81;Hylas 1 ;0;0;0;0;AC-7.2m
+282;-81;ARSAT 2;0;0;0;0;AC-7.2m
+283;-79;Sky-Mexico 1 ;0;0;0;0;AC-7.2m
+284;-77;QuetzSat 1;0;0;0;0;AC-7.2m
+285;-76;Intelsat 16 ;0;0;0;0;AC-7.2m
+286;-75;Star One C3;0;0;0;0;AC-7.2m
+287;-75;SGDC 1;0;0;0;0;AC-7.2m
+288;-74;Hispasat 74W-1 ;0;0;0;0;AC-7.2m
+289;-73;Nimiq 5 ;0;0;0;0;AC-7.2m
+290;-72;Astra 2C;0;0;0;0;AC-7.2m
+291;-72;AMC 3 ;0;0;0;0;AC-7.2m
+292;-72;ARSAT 1;0;0;0;0;AC-7.2m
+293;-70;Star One C4 ;0;0;0;0;AC-7.2m
+294;-70;Viasat 2 ;0;0;0;0;AC-7.2m
+295;-70;Star One D2;0;0;0;0;AC-7.2m
+296;-67;SES 10 ;0;0;0;0;AC-7.2m
+297;-65;Eutelsat 65 West A ;0;0;0;0;AC-7.2m
+298;-65;Star One C2;0;0;0;0;AC-7.2m
+299;-63;Telstar 14R ;0;0;0;0;AC-7.2m
+300;-63;Telstar 19V ;0;0;0;0;AC-7.2m
+301;-61;Echostar 16 ;0;0;0;0;AC-7.2m
+302;-61;Amazonas 5 ;0;0;0;0;AC-7.2m
+303;-61;Echostar 18 ;0;0;0;0;AC-7.2m
+304;-61;Amazonas 2 ;0;0;0;0;AC-7.2m
+305;-61;Echostar 15;0;0;0;0;AC-7.2m
+306;-61;Amazonas 3 ;0;0;0;0;AC-7.2m
+307;-58;Intelsat 21 ;0;0;0;0;AC-7.2m
+308;-55;Inmarsat GX2 ;0;0;0;0;AC-7.2m
+309;-55;Intelsat 34 ;0;0;0;0;AC-7.2m
+310;-54;Inmarsat-3F5 ;0;0;0;0;AC-7.2m
+311;-53;Intelsat 23 ;0;0;0;0;AC-7.2m
+312;-50;Intelsat 902 ;0;0;0;0;AC-7.2m
+313;-50;Intelsat 9 ;0;0;0;0;AC-7.2m
+314;-47;SES 14;0;0;0;0;AC-7.2m
+315;-45;Intelsat 14 ;0;0;0;0;AC-7.2m
+316;-43;Intelsat 11 ;0;0;0;0;AC-7.2m
+317;-43;Intelsat 32e ;0;0;0;0;AC-7.2m
+318;-40;SES 6;0;0;0;0;AC-7.2m
+319;-37;NSS 10 ;0;0;0;0;AC-7.2m
+320;-37;Telstar 11N ;0;0;0;0;AC-7.2m
+321;-36;Hispasat 36W-1 ;0;0;0;0;AC-7.2m
+322;-34;Hylas 4 ;19355;L;0;0;AC-7.2m
+323;-34;Intelsat 35e;4126;L;0;0;AC-7.2m
+324;-32;Intelsat 25 ;0;0;0;0;AC-7.2m
+325;-30;Hispasat 30W-5 ;10770;H;0;0;AC-7.2m
+326;-30;Hispasat 30W-6 ;11491;V;0;0;AC-7.2m
+327;-30;XTAR-LANT ;0;0;0;0;AC-7.2m
+328;-29;Intelsat 904 ;0;0;0;0;AC-7.2m
+329;-27;Intelsat 901 + MEV1 ;11495;V;0;0;AC-7.2m
+330;-25;AlComSat 1;12160;H;0;0;AC-7.2m
+331;-24;Intelsat 905 ;11038;H;0;0;AC-7.2m
+332;-22;SES 4 ;4132;L;0;0;AC-7.2m
+333;-20;NSS 7;4102;R;0;0;AC-7.2m
+334;-20;Al Yah 3;0;0;0;0;AC-7.2m
+335;-18;Skynet 5C;0;0;0;0;AC-7.2m
+336;-18;Intelsat 37e;4130;L;0;0;AC-7.2m
+337;-16;Luch 5B ;0;0;0;0;AC-7.2m
+338;-15;Telstar 12V ;12709;V;0;0;AC-7.2m
+339;-14;Express AM8;3675;R;0;0;AC-7.2m
+340;-12;Eutelsat 12 West E ;11231;H;0;0;AC-7.2m
+341;-11;Express AM33 ;0;0;0;0;AC-7.2m
+342;-11;Express AM44 ;3662;R;0;0;AC-7.2m
+343;-8;Eutelsat 8 West B;3821;L;0;0;AC-7.2m
+344;-7;Eutelsat 7 West A ;10727;H;0;0;AC-7.2m
+345;-7;Nilesat 201;0;0;0;0;AC-7.2m
+346;-5;Eutelsat 5 West A ;11593;H;0;0;AC-7.2m
+347;-5;Eutelsat 5 West B ;11013;V;0;0;AC-7.2m
+348;-4;Amos 7 ;10972;V;0;0;AC-7.2m
+349;-4;Amos 3 ;10722;V;0;0;AC-7.2m
+350;-3;ABS-3A;4127; V;0;0;AC-7.2m
+351;-1;Thor 7;12149;V;0;0;AC-7.2m
+352;-1;Skynet 4E;0;0;0;0;AC-7.2m
+353;-1;Intelsat 10-02 + MEV2 ;4055;L;0;0;AC-7.2m
+354;-1;Thor 5 ;11278;V;0;0;AC-7.2m
+355;-1;Thor 6 ;10747;V;0;0;AC-7.2m

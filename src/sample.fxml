@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="radio5" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+   <children>
+      <Button id="button1" fx:id="button1" layoutX="11.0" layoutY="54.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="248.0" text="Вывести все КА из БД в таблицу" />
+      <Button id="button2" fx:id="button2" layoutX="531.0" layoutY="610.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="123.0" text="Очистить таблицу" />
+      <TableView id="TableView1" fx:id="TableView1" layoutX="285.0" layoutY="51.0" prefHeight="547.0" prefWidth="420.0">
+
+      </TableView>
+      <Label id="label1" fx:id="label1" alignment="CENTER" contentDisplay="CENTER" layoutX="9.0" layoutY="7.0" prefHeight="31.0" prefWidth="696.0" textAlignment="CENTER" />
+      <Label id="label2" fx:id="label2" alignment="CENTER" contentDisplay="CENTER" layoutX="15.0" layoutY="110.0" prefHeight="31.0" prefWidth="248.0" text="Введите имя КА или ПТ для расчёта" textAlignment="CENTER" />
+      <TextField id="textField1" fx:id="textField1" layoutX="15.0" layoutY="143.0" prefHeight="31.0" prefWidth="138.0" />
+      <Button id="button3" fx:id="button3" layoutX="15.0" layoutY="610.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="248.0" text="Сохранить в БД поля отмеченные  *" />
+      <Button id="button5" fx:id="button5" layoutX="340.0" layoutY="610.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="180.0" text="Описание программы" />
+      <Label id="label3" fx:id="label3" layoutX="163.0" layoutY="143.0" prefHeight="31.0" prefWidth="30.0" text="ПТ: *" />
+      <Button id="button4" fx:id="button4" layoutX="16.0" layoutY="229.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="248.0" text="Рассчитать АЗ и УМ" />
+      <TextField id="textField2" fx:id="textField2" layoutX="743.0" layoutY="556.0" prefHeight="31.0" prefWidth="92.0" />
+      <TextField id="textField3" fx:id="textField3" layoutX="878.0" layoutY="556.0" prefHeight="31.0" prefWidth="92.0" />
+      <Label id="label5" fx:id="label5" alignment="CENTER" contentDisplay="CENTER" layoutX="835.0" layoutY="556.0" prefHeight="31.0" prefWidth="30.0" text="N" textAlignment="CENTER" />
+      <Label id="label4" fx:id="label4" alignment="CENTER" contentDisplay="CENTER" layoutX="720.0" layoutY="439.0" prefHeight="31.0" prefWidth="292.0" text="координаты антенны" textAlignment="CENTER" AnchorPane.leftAnchor="720.0" AnchorPane.rightAnchor="12.0" />
+      <Label id="label6" fx:id="label6" alignment="CENTER" contentDisplay="CENTER" layoutX="970.0" layoutY="556.0" prefHeight="31.0" prefWidth="30.0" text="E" textAlignment="CENTER" />
+      <Label id="label7" fx:id="label7" alignment="CENTER" contentDisplay="CENTER" layoutX="48.0" layoutY="310.0" prefHeight="31.0" prefWidth="162.0" text="Азимут = " textAlignment="CENTER" />
+      <Label id="label8" fx:id="label8" alignment="CENTER" contentDisplay="CENTER" layoutX="48.0" layoutY="341.0" prefHeight="31.0" prefWidth="162.0" text="Угол места = " textAlignment="CENTER" />
+      <Separator layoutX="15.0" layoutY="382.0" prefHeight="0.0" prefWidth="248.0" />
+      <TextField id="textField4" fx:id="textField4" layoutX="14.0" layoutY="416.0" prefHeight="31.0" prefWidth="111.0" />
+      <TextField id="textField5" fx:id="textField5" layoutX="149.0" layoutY="416.0" prefHeight="31.0" prefWidth="111.0" />
+      <Label id="label9" fx:id="label9" alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="385.0" prefHeight="31.0" prefWidth="111.0" text="Частота (FREQ) *" textAlignment="CENTER" />
+      <Label id="label10" fx:id="label10" alignment="CENTER" contentDisplay="CENTER" layoutX="135.0" layoutY="385.0" prefHeight="31.0" prefWidth="147.0" text="Поляризация (POL) *" textAlignment="CENTER" />
+      <TextField id="textField6" fx:id="textField6" layoutX="198.0" layoutY="143.0" prefHeight="31.0" prefWidth="48.0" />
+      <Label id="label11" fx:id="label11" layoutX="254.0" layoutY="143.0" prefHeight="31.0" prefWidth="23.0" text="°" />
+      <RadioButton id="radio1" fx:id="radio1" layoutX="94.0" layoutY="187.0" mnemonicParsing="false" onAction="#onRadio1" selected="true" text="по имени КА">
+         <toggleGroup>
+            <ToggleGroup fx:id="group1" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton id="radio2" fx:id="radio2" layoutX="212.0" layoutY="187.0" mnemonicParsing="false" onAction="#onRadio2" prefHeight="17.0" prefWidth="68.0" text="по ПТ" toggleGroup="$group1" />
+      <Label id="label12" fx:id="label12" alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="279.0" prefHeight="31.0" prefWidth="248.0" text="Рассчётные значения" textAlignment="CENTER" />
+      <Label id="label13" fx:id="label13" alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="454.0" prefHeight="31.0" prefWidth="248.0" text="Реальные значения" textAlignment="CENTER" />
+      <Label id="label14" fx:id="label14" alignment="CENTER" contentDisplay="CENTER" layoutX="19.0" layoutY="478.0" prefHeight="31.0" prefWidth="111.0" text="AZ_REAL *" textAlignment="CENTER" />
+      <Label id="label15" fx:id="label15" alignment="CENTER" contentDisplay="CENTER" layoutX="153.0" layoutY="478.0" prefHeight="31.0" prefWidth="111.0" text="UM_REAL *" textAlignment="CENTER" />
+      <TextField id="textField7" fx:id="textField7" layoutX="14.0" layoutY="509.0" prefHeight="31.0" prefWidth="111.0" />
+      <TextField id="textField8" fx:id="textField8" layoutX="147.0" layoutY="509.0" prefHeight="31.0" prefWidth="111.0" />
+      <Label id="label16" fx:id="label16" alignment="CENTER" contentDisplay="CENTER" layoutX="15.0" layoutY="540.0" prefHeight="31.0" prefWidth="248.0" text="COMMENT *" textAlignment="CENTER" />
+      <TextField id="textField9" fx:id="textField9" layoutX="15.0" layoutY="571.0" prefHeight="31.0" prefWidth="248.0" />
+      <Button id="button6" fx:id="button6" layoutX="213.0" layoutY="329.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="48.0" text="+" />
+      <Button id="button7" fx:id="button7" layoutX="16.0" layoutY="183.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="68.0" text="Найти" />
+      <TableView id="TableView2" fx:id="TableView2" layoutX="718.0" layoutY="88.0" prefHeight="351.0" prefWidth="292.0" AnchorPane.leftAnchor="718.0" AnchorPane.rightAnchor="14.0" />
+      <Button id="button8" fx:id="button8" layoutX="718.0" layoutY="54.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="292.0" text="Выбрать координаты антенны из списка" AnchorPane.leftAnchor="718.0" AnchorPane.rightAnchor="14.0" />
+      <TextField id="textField10" fx:id="textField10" layoutX="741.0" layoutY="494.0" prefHeight="31.0" prefWidth="92.0" />
+      <TextField id="textField11" fx:id="textField11" layoutX="876.0" layoutY="494.0" prefHeight="31.0" prefWidth="92.0" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="772.0" layoutY="463.0" prefHeight="31.0" prefWidth="30.0" text="ID" textAlignment="CENTER" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="876.0" layoutY="463.0" prefHeight="31.0" prefWidth="92.0" text="NAMESTATION" textAlignment="CENTER" />
+      <Label id="label11" fx:id="label11" alignment="CENTER" contentDisplay="CENTER" layoutX="774.0" layoutY="14.0" prefHeight="31.0" prefWidth="180.0" text="NAMESTATION" textAlignment="CENTER" textFill="#2200ff" AnchorPane.leftAnchor="774.0" AnchorPane.rightAnchor="70.0">
+         <font>
+            <Font name="Arial Black" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="741.0" layoutY="525.0" prefHeight="31.0" prefWidth="92.0" text="LATITUDE" textAlignment="CENTER" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="876.0" layoutY="525.0" prefHeight="31.0" prefWidth="92.0" text="LONGITUDE" textAlignment="CENTER" />
+      <Button id="button9" fx:id="button9" layoutX="720.0" layoutY="610.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="292.0" text="Сохранить в БД" AnchorPane.leftAnchor="720.0" AnchorPane.rightAnchor="12.0" />
+
+   </children>
+</AnchorPane>

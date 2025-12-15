@@ -11,7 +11,6 @@ import javafx.scene.control.*;
 import javafx.scene.paint.Color;
 import javafx.util.Callback;
 import org.sqlite.JDBC;
-
 import javax.swing.*;
 import java.awt.*;
 import java.io.*;
@@ -28,13 +27,13 @@ public class Controller extends Component  {
     private TableView<ObservableList> TableView1, TableView2;
 
     @FXML
-    private Label label1, label2, label3, label4, label7, label8, label9, label10, label11, label12, label13, label14, label15, label16;
+    private Label label1, label2, label3, label4, label7, label8, label9, label10, label11, label14, label15, label16;
 
     @FXML
     private TextField textField1, textField2, textField3, textField4, textField5, textField6, textField7, textField8, textField9, textField10, textField11;
 
     @FXML
-    private RadioButton radio1, radio2;
+    private RadioButton radio1;
 
     private ObservableList<ObservableList> data;
 
@@ -360,7 +359,7 @@ public class Controller extends Component  {
 
 //Нажатие на кнопку 8
         button8.setOnAction(event -> {
-            System.out.println("Нажата кнопка 8");
+            //System.out.println("Нажата кнопка 8");
             data = FXCollections.observableArrayList();
 //            valueSelect = true;
             TableView2.getItems().clear();
@@ -397,7 +396,7 @@ public class Controller extends Component  {
 
 
                 SQL = "UPDATE station SET NAMESTATION = '" + namestation + "'" + ", LATITUDE = '" + lat + "'" +   ", LONGITUDE = '" + lon  + "'" + " WHERE ID = '" + id + "'"; // OK
-                System.out.println(" SQL = " + SQL);
+                //System.out.println(" SQL = " + SQL);
                 sql4();
                 label1.setText("SQL = " + SQL);
             }
@@ -581,19 +580,12 @@ public class Controller extends Component  {
                     label1.setText("Selected: " + newValue);
 // Получаем строку со всеми значениями, разделенными запятыми
                     String text = newValue.toString();
-                    System.out.println("text = " + text);
+                    //System.out.println("text = " + text);
 // Выбранную строку со всеми значениями занесем в массив строк, разделенными запятыми
                     String[] words = text.split(",");
 // Выберем только нужные значения, т.е. столбцы и выведем их в textField1 в зависимости от того какая была нажата кнопка и соответсвенно было значение переменной valueSelect
                     for (int i = 0; i < words.length; i++) {
                         //System.out.println(words[i]);
-//                        label2.setTextFill(Color.web("#000000"));
-//                        label2.setText("Выберите КА из Таблицы");
-//                        label9.setTextFill(Color.web("#000000"));
-//                        label9.setText("Частота (FREQ) *");
-//                        label10.setTextFill(Color.web("#000000"));
-//                        label10.setText("Поляризация (POL) *");
-//                        pt = Double.parseDouble(words[1].trim());
                         textField10.setText(words[0].replace('[', ' ').trim()); // ID
                         textField11.setText(words[1].trim()); // NAMESTATION
                         textField2.setText(words[2].trim()); // latitude
@@ -604,16 +596,7 @@ public class Controller extends Component  {
                         id = textField10.getText();
                         namestation = textField11.getText();
                         label11.setText(namestation);
-                        System.out.println(" id = "  + id + " namestation = " + namestation + " lat = " + lat + " lon = " + lon);
-
-
-//                        freq = textField4.getText();
-//                        textField5.setText(words[4].trim()); // Поляризация
-//                        pol = textField5.getText();
-//                        textField7.setText(words[5].trim()); // Азимут
-//                        textField8.setText(words[6].trim()); // Угол места
-//                        textField9.setText(words[7].replace(']', ' ').trim()); // Комментарий
-//                        calculation();
+                        //System.out.println(" id = "  + id + " namestation = " + namestation + " lat = " + lat + " lon = " + lon);
                         saveToPropertiesSetting();
                     }
 

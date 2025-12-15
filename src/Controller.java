@@ -11,6 +11,7 @@ import javafx.scene.control.*;
 import javafx.scene.paint.Color;
 import javafx.util.Callback;
 import org.sqlite.JDBC;
+
 import javax.swing.*;
 import java.awt.*;
 import java.io.*;
@@ -27,13 +28,13 @@ public class Controller extends Component  {
     private TableView<ObservableList> TableView1, TableView2;
 
     @FXML
-    private Label label1, label2, label3, label4, label7, label8, label9, label10, label11, label14, label15, label16;
+    private Label label1, label2, label3, label4, label7, label8, label9, label10, label11, label12, label13, label14, label15, label16;
 
     @FXML
     private TextField textField1, textField2, textField3, textField4, textField5, textField6, textField7, textField8, textField9, textField10, textField11;
 
     @FXML
-    private RadioButton radio1;
+    private RadioButton radio1, radio2;
 
     private ObservableList<ObservableList> data;
 
@@ -51,7 +52,7 @@ public class Controller extends Component  {
     private double lon;   // 32.09363 Смоленск
     private double pt;
 
-// Константа, в которой хранится адрес подключения
+    // Константа, в которой хранится адрес подключения
     private String CON_STR = "jdbc:sqlite:Z:/database_sat.db";
     // Объект, в котором будет храниться соединение с БД
     private Connection connection;
@@ -214,54 +215,54 @@ public class Controller extends Component  {
 //Нажатие на кнопку 3 - Занести частоту, поляризацию и подспутниковую точку в Базу данных - начало
         button3.setOnAction(event -> {
 // Проверка за заполненность полей Имя КА, частота, поляризация
-                    if (textField1.getText().length() == 0 || textField6.getText().length() == 0) {
-                        label2.setTextFill(Color.web("#FF0000"));
-                        label2.setText("Введите имя КА или ПТ для расчёта");
+            if (textField1.getText().length() == 0 || textField6.getText().length() == 0) {
+                label2.setTextFill(Color.web("#FF0000"));
+                label2.setText("Введите имя КА или ПТ для расчёта");
 
-                    }else if (textField4.getText().length() == 0){
-                        label9.setTextFill(Color.web("#FF0000"));
-                        label9.setText("Частота (FREQ) *");
+            }else if (textField4.getText().length() == 0){
+                label9.setTextFill(Color.web("#FF0000"));
+                label9.setText("Частота (FREQ) *");
 
-                    }else if (textField5.getText().length() == 0){
-                        label10.setTextFill(Color.web("#FF0000"));
-                        label10.setText("Поляризация (POL) *");
+            }else if (textField5.getText().length() == 0){
+                label10.setTextFill(Color.web("#FF0000"));
+                label10.setText("Поляризация (POL) *");
 
-                    }else if (textField7.getText().length() == 0){
-                        label14.setTextFill(Color.web("#FF0000"));
-                        label14.setText("AZ_REAL *");
+            }else if (textField7.getText().length() == 0){
+                label14.setTextFill(Color.web("#FF0000"));
+                label14.setText("AZ_REAL *");
 
-                    }else if (textField8.getText().length() == 0){
-                        label15.setTextFill(Color.web("#FF0000"));
-                        label15.setText("UM_REAL *");
+            }else if (textField8.getText().length() == 0){
+                label15.setTextFill(Color.web("#FF0000"));
+                label15.setText("UM_REAL *");
 
-                    }else if (textField9.getText().length() == 0){
-                        label16.setTextFill(Color.web("#FF0000"));
-                        label16.setText("COMMENT *");
+            }else if (textField9.getText().length() == 0){
+                label16.setTextFill(Color.web("#FF0000"));
+                label16.setText("COMMENT *");
 
-                    }else {
-                        label2.setTextFill(Color.web("#000000"));
-                        label2.setText("Введите имя КА или ПТ для расчёта");
-                        label9.setTextFill(Color.web("#000000"));
-                        label9.setText("Частота (FREQ) *");
-                        label10.setTextFill(Color.web("#000000"));
-                        label10.setText("Поляризация (POL) *");
-                        label14.setTextFill(Color.web("#000000"));
-                        label14.setText("AZ_REAL *");
-                        label15.setTextFill(Color.web("#000000"));
-                        label15.setText("UM_REAL *");
-                        label16.setTextFill(Color.web("#000000"));
-                        label16.setText("COMMENT *");
-                        nameKA = textField1.getText().trim().replace(",", ".");
-                        freq = textField4.getText().trim().replace(",", ".");
-                        pol = textField5.getText().trim().replace(",", ".");
-                        azreal = textField7.getText().trim().replace(",", ".");
-                        umreal = textField8.getText().trim().replace(",", ".");
-                        comment = textField9.getText().trim().replace(",", ".");
-                        pt = Double.parseDouble(textField6.getText().trim().replace(",", "."));
-                        SQL = "UPDATE satellite SET FREQ = " + freq + ", POL = '" + pol + "'" +   ", PT = '" + pt + "'" + ", AZ_REAL = '" + azreal + "'" + ", UM_REAL = '" + umreal + "'" + ", COMMENT = '" + comment + "'" + " WHERE SATELLITE_NAME = '" + nameKA + "'"; // OK
-                        sql2();
-                        label1.setText("SQL = " + SQL);
-                    }
+            }else {
+                label2.setTextFill(Color.web("#000000"));
+                label2.setText("Введите имя КА или ПТ для расчёта");
+                label9.setTextFill(Color.web("#000000"));
+                label9.setText("Частота (FREQ) *");
+                label10.setTextFill(Color.web("#000000"));
+                label10.setText("Поляризация (POL) *");
+                label14.setTextFill(Color.web("#000000"));
+                label14.setText("AZ_REAL *");
+                label15.setTextFill(Color.web("#000000"));
+                label15.setText("UM_REAL *");
+                label16.setTextFill(Color.web("#000000"));
+                label16.setText("COMMENT *");
+                nameKA = textField1.getText().trim().replace(",", ".");
+                freq = textField4.getText().trim().replace(",", ".");
+                pol = textField5.getText().trim().replace(",", ".");
+                azreal = textField7.getText().trim().replace(",", ".");
+                umreal = textField8.getText().trim().replace(",", ".");
+                comment = textField9.getText().trim().replace(",", ".");
+                pt = Double.parseDouble(textField6.getText().trim().replace(",", "."));
+                SQL = "UPDATE satellite SET FREQ = " + freq + ", POL = '" + pol + "'" +   ", PT = '" + pt + "'" + ", AZ_REAL = '" + azreal + "'" + ", UM_REAL = '" + umreal + "'" + ", COMMENT = '" + comment + "'" + " WHERE SATELLITE_NAME = '" + nameKA + "'"; // OK
+                sql2();
+                label1.setText("SQL = " + SQL);
+            }
         });
 //Нажатие на кнопку 3 - Занести частоту, поляризацию и подспутниковую точку в Базу данных - конец
 
@@ -359,7 +360,7 @@ public class Controller extends Component  {
 
 //Нажатие на кнопку 8
         button8.setOnAction(event -> {
-            //System.out.println("Нажата кнопка 8");
+            System.out.println("Нажата кнопка 8");
             data = FXCollections.observableArrayList();
 //            valueSelect = true;
             TableView2.getItems().clear();
@@ -396,7 +397,7 @@ public class Controller extends Component  {
 
 
                 SQL = "UPDATE station SET NAMESTATION = '" + namestation + "'" + ", LATITUDE = '" + lat + "'" +   ", LONGITUDE = '" + lon  + "'" + " WHERE ID = '" + id + "'"; // OK
-                //System.out.println(" SQL = " + SQL);
+                System.out.println(" SQL = " + SQL);
                 sql4();
                 label1.setText("SQL = " + SQL);
             }
@@ -407,7 +408,7 @@ public class Controller extends Component  {
         select();
     }
 
-// Радиокнопка выбора режима ввода частоты - 5
+    // Радиокнопка выбора режима ввода частоты - 5
     public void onRadio1(javafx.event.ActionEvent actionEvent) {
         System.out.println("onRadio1");
         textField1.setEditable(true);
@@ -416,7 +417,7 @@ public class Controller extends Component  {
         textField6.setDisable(true);
     }
 
-// Радиокнопка выбора режима ввода частоты - 6
+    // Радиокнопка выбора режима ввода частоты - 6
     public void onRadio2(javafx.event.ActionEvent actionEvent) {
         System.out.println("onRadio2");
         textField1.setEditable(false);
@@ -425,7 +426,7 @@ public class Controller extends Component  {
         textField6.setDisable(false);
     }
 
-// Метод сохранения в properties
+    // Метод сохранения в properties
     void saveToPropertiesSetting() {
 // Загружаем  setting.properties из папки database
         File theDir17 = new File(System.getProperty(CURRENTDIRECTORY),"database/setting.properties");
@@ -466,7 +467,7 @@ public class Controller extends Component  {
         return Math.round(value * scale) / scale;
     }
 
-// Метод расчета азимута и угла места
+    // Метод расчета азимута и угла места
     public void calculation (){
 //условие: пока не введены координаты расчет не будет производиться
         if (textField2.getText().length() == 0 | textField3.getText().length() == 0) {
@@ -526,37 +527,37 @@ public class Controller extends Component  {
             @Override
             public void changed(ObservableValue<? extends ObservableList> observable, ObservableList oldValue, ObservableList newValue) {
 // Проверка newValue на null, если нулевое, то ничего не делаем (иначе выскакивала ошибка)
-                    if (newValue == null) {
-                        // do something
-                        //System.out.println("newValue = " + newValue);
-                    }else {
-                        label1.setText("Selected: " + newValue);
+                if (newValue == null) {
+                    // do something
+                    //System.out.println("newValue = " + newValue);
+                }else {
+                    label1.setText("Selected: " + newValue);
 // Получаем строку со всеми значениями, разделенными запятыми
-                        String text = newValue.toString();
-                        //System.out.println("text = " + text);
+                    String text = newValue.toString();
+                    //System.out.println("text = " + text);
 // Выбранную строку со всеми значениями занесем в массив строк, разделенными запятыми
-                        String[] words = text.split(",");
+                    String[] words = text.split(",");
 // Выберем только нужные значения, т.е. столбцы и выведем их в textField1 в зависимости от того какая была нажата кнопка и соответсвенно было значение переменной valueSelect
-                        for (int i = 0; i < words.length; i++) {
-                            //System.out.println(words[i]);
-                            label2.setTextFill(Color.web("#000000"));
-                            label2.setText("Выберите КА из Таблицы");
-                            label9.setTextFill(Color.web("#000000"));
-                            label9.setText("Частота (FREQ) *");
-                            label10.setTextFill(Color.web("#000000"));
-                            label10.setText("Поляризация (POL) *");
-                            pt = Double.parseDouble(words[1].trim());
-                            textField6.setText(words[1].trim()); // PT
-                            textField1.setText(words[2].trim()); // Имя КА
-                            textField4.setText(words[3].trim()); // Частота
-                            freq = textField4.getText();
-                            textField5.setText(words[4].trim()); // Поляризация
-                            pol = textField5.getText();
-                            textField7.setText(words[5].trim()); // Азимут
-                            textField8.setText(words[6].trim()); // Угол места
-                            textField9.setText(words[7].replace(']', ' ').trim()); // Комментарий
-                            calculation();
-                            saveToPropertiesSetting();
+                    for (int i = 0; i < words.length; i++) {
+                        //System.out.println(words[i]);
+                        label2.setTextFill(Color.web("#000000"));
+                        label2.setText("Выберите КА из Таблицы");
+                        label9.setTextFill(Color.web("#000000"));
+                        label9.setText("Частота (FREQ) *");
+                        label10.setTextFill(Color.web("#000000"));
+                        label10.setText("Поляризация (POL) *");
+                        pt = Double.parseDouble(words[1].trim());
+                        textField6.setText(words[1].trim()); // PT
+                        textField1.setText(words[2].trim()); // Имя КА
+                        textField4.setText(words[3].trim()); // Частота
+                        freq = textField4.getText();
+                        textField5.setText(words[4].trim()); // Поляризация
+                        pol = textField5.getText();
+                        textField7.setText(words[5].trim()); // Азимут
+                        textField8.setText(words[6].trim()); // Угол места
+                        textField9.setText(words[7].replace(']', ' ').trim()); // Комментарий
+                        calculation();
+                        saveToPropertiesSetting();
                     }
 
                 }
@@ -580,12 +581,19 @@ public class Controller extends Component  {
                     label1.setText("Selected: " + newValue);
 // Получаем строку со всеми значениями, разделенными запятыми
                     String text = newValue.toString();
-                    //System.out.println("text = " + text);
+                    System.out.println("text = " + text);
 // Выбранную строку со всеми значениями занесем в массив строк, разделенными запятыми
                     String[] words = text.split(",");
 // Выберем только нужные значения, т.е. столбцы и выведем их в textField1 в зависимости от того какая была нажата кнопка и соответсвенно было значение переменной valueSelect
                     for (int i = 0; i < words.length; i++) {
                         //System.out.println(words[i]);
+//                        label2.setTextFill(Color.web("#000000"));
+//                        label2.setText("Выберите КА из Таблицы");
+//                        label9.setTextFill(Color.web("#000000"));
+//                        label9.setText("Частота (FREQ) *");
+//                        label10.setTextFill(Color.web("#000000"));
+//                        label10.setText("Поляризация (POL) *");
+//                        pt = Double.parseDouble(words[1].trim());
                         textField10.setText(words[0].replace('[', ' ').trim()); // ID
                         textField11.setText(words[1].trim()); // NAMESTATION
                         textField2.setText(words[2].trim()); // latitude
@@ -596,7 +604,16 @@ public class Controller extends Component  {
                         id = textField10.getText();
                         namestation = textField11.getText();
                         label11.setText(namestation);
-                        //System.out.println(" id = "  + id + " namestation = " + namestation + " lat = " + lat + " lon = " + lon);
+                        System.out.println(" id = "  + id + " namestation = " + namestation + " lat = " + lat + " lon = " + lon);
+
+
+//                        freq = textField4.getText();
+//                        textField5.setText(words[4].trim()); // Поляризация
+//                        pol = textField5.getText();
+//                        textField7.setText(words[5].trim()); // Азимут
+//                        textField8.setText(words[6].trim()); // Угол места
+//                        textField9.setText(words[7].replace(']', ' ').trim()); // Комментарий
+//                        calculation();
                         saveToPropertiesSetting();
                     }
 
@@ -657,7 +674,7 @@ public class Controller extends Component  {
         }
     }
 
-// Запрос в БД на внесение частоты и поляризации
+    // Запрос в БД на внесение частоты и поляризации
     public void sql2 (){
 
 //условие: пока не введены часта и поляризация расчет не будет производиться
@@ -781,7 +798,7 @@ public class Controller extends Component  {
     }
 
 
-// Метод создания файла database_sat.db из папки с ресурсами в рабочую папку с программой
+    // Метод создания файла database_sat.db из папки с ресурсами в рабочую папку с программой
     void createFile1(){
         File file1 = null;
         String resource = "/database_sat.db";
@@ -933,14 +950,14 @@ public class Controller extends Component  {
         }
     }
 
-// Проверка существования файла setting.properties
+    // Проверка существования файла setting.properties
     void checkingFile(){
         File theDir = new File(System.getProperty(CURRENTDIRECTORY),"database/setting.properties");
         if (!theDir.exists())
             createFileAppProperties();
     }
 
-// Метод создания файла setting.properties из папки с ресурсами в рабочую папку с программой
+    // Метод создания файла setting.properties из папки с ресурсами в рабочую папку с программой
     void createFileAppProperties(){
 // Создаем файл setting.properties в папке с программой
         File dest = new File(System.getProperty(CURRENTDIRECTORY),"setting.properties");
@@ -956,7 +973,7 @@ public class Controller extends Component  {
         }
     }
 
- // Как скопировать файл в Java? 4 способа — примеры и код
+    // Как скопировать файл в Java? 4 способа — примеры и код
 // Способ 1: Используем потоки для копирования файла
 // https://javadevblog.com/kak-skopirovat-fajl-v-java-4-sposoba-primery-i-kod.html
     private static void copyFileUsingStream(File source, File dest) throws IOException {
